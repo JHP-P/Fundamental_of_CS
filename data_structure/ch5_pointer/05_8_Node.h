@@ -3,7 +3,7 @@
 class Node : public Student {   // Student를 상속하여 구현함
     Node*   link;               // 다음 노드를 가리키는 포인터 변수
 public:
-    Node( int id=0, char* name="", char* dept="" )
+    Node( int id=0, char* name=nullptr, char* dept=nullptr )
         : Student(id, name, dept) { link = NULL; }
     ~Node(void) {}
     Node* getLink() {return link;}

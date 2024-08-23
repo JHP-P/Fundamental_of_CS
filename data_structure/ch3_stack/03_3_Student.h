@@ -8,7 +8,7 @@ class Student{
     char name[MAX_STRING];  // 이름
     char dept[MAX_STRING];  // 소속 학과
 public:
-    Student(int i=0, char* n="", char* d="") { set (i, n, d); }
+    Student(int i=0, char* n=nullptr, char* d=nullptr) { set (i, n, d); }
     void set(int i, char* n, char* d){
         id = i;
         strcpy(name, n);

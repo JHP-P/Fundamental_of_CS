@@ -9,7 +9,7 @@ public:
     void push( Node *p ) {
         if( isEmpty() ) top = p;
         else {
-            p->setLink(top);        //
+            p->setLink(top);
             top = p;
         }
     }
@@ -20,7 +20,7 @@ public:
         return p;
     }
     Node* peek()    {return top;}
-    void display() {
+    void display() {                        // 화면 출력
         printf("[LinkedStack]\n");
         for( Node *p = top; p != NULL; p=p->getLink() )
             p->display();
