@@ -11,6 +11,7 @@ class LinkedQueue
     { while(!isEmpty())
         delete dequeue(); 
     }
+    bool isEmpty() { return front == NULL;}
 
     // 삽입연산: 연결된 큐의 맨 뒤에 노드 삽입
     void enqueue (Node* p)
